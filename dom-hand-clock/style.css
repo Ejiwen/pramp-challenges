@@ -1,0 +1,55 @@
+.container {
+}
+
+.circleWatch {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watchBody {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+  transform-origin: 0 100%;
+}
+
+.hourClass {
+  width: 10px;
+  height: 130px;
+  background-color: black;
+  transform: rotate(20deg);
+}
+
+.minClass {
+  width: 10px;
+  height: 130px;
+  background-color: green;
+  transform: rotate(90deg);
+}
+
+.secs {
+  width: 2px;
+  height: 130px;
+  background-color: pink;
+  transform: rotate(0deg);
+
+}
+ .secs2 {
+    width: 20px;
+    height: 130px;
+    background-color: pink;
+    transform: rotate(0deg);
+ }
