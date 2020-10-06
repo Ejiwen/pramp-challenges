@@ -1,27 +1,56 @@
 .container {
-  /* Height must be defined to 100vh for centrate the div */
-   height: 100vh; 
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .watch {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
   border: 1px solid black;
   border-radius: 100%;
-}
-
-.watch-body {
 }
 
 .centerPoint {
   width: 12px;
   height: 12px;
+  border-radius: 100px;
   background-color: black;
-  top: 50%;
+  position: absolute;
+  z-index: 1;
+}
+
+.hourHand {
+  clip-path: polygon(51% 0, 100% 20%, 100% 100%, 0 100%, 0% 20%);
+  height: 150px;
+  width: 1px;
+  background-color: black;
+  transform: translate(0%, -50%) rotate(60deg);
+  transform-origin: bottom;
+  border: 3px solid black;
+}
+
+.muniteHand {
+  clip-path: polygon(51% 0, 100% 20%, 100% 100%, 0 100%, 0% 20%);
+  height: 200px;
+  width: 1px;
+  background-color: black;
+  transform: translate(0, -50%) rotate(100deg);
+  position: absolute;
+  border: 3px solid black;
+  transform-origin: bottom;
+}
+
+.secondHand {
+  height: 220px;
+  width: 1px;
+  background-color: black;
+  transform: translate(0, -50%) rotate(180deg);
+  position: absolute;
+  border: 1px solid black;
+  transform-origin: bottom;
 }
