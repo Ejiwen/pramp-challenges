@@ -1,51 +1,27 @@
-@keyframes tick {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.hand {
-  position: absolute;
-  width: 5px;
-  height: 250px;
-  background: black;
-  animation: tick 60s steps(60, end) infinite;
-  transform-origin: 0 100%;
+.container {
+  /* Height must be defined to 100vh for centrate the div */
+   height: 100vh; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.hand-minutes {
-  position: absolute;
-  /*top 20px;*/
-  margin-top: 20px;
-  width: 10px;
-  height: 230px;
-  background: red;
-  animation: tick 3600s linear infinite;
-  transform-origin: 0 100%;
-}
-.hand-hours {
-  position: absolute;
-  margin-top: 50px;
-  width: 10px;
+.watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
   height: 200px;
-  background: blue;
-  animation: tick 216000s linear infinite;
-  transform-origin: 0 100%;
+  border: 1px solid black;
+  border-radius: 100%;
 }
 
-.clock {
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  border: 3px solid black;
-  width: 500px;
-  border-radius: 50%;
+.watch-body {
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-content: center;
+.centerPoint {
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  top: 50%;
 }
