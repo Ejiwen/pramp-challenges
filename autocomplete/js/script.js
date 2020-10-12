@@ -5,7 +5,7 @@ inputElm.addEventListener("input", displayMovies);
 
 async function displayMovies(e){
  let movieTitle = e.target.value;
- let dataMovies = await searchData(movieTitle)
+ let dataMovies = await searchData(movieTitle);
  
  if(movieTitle.length > 0) {
     listMovies.innerHTML = "";

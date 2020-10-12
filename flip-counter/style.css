@@ -1,0 +1,30 @@
+body {
+    height: 95vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+span {
+    border: 1px solid green;
+    padding: 30px 40px;
+    font-size: 4.6rem;
+    font-weight: bolder;
+    background-color: rgb(46, 42, 42);
+    color: white;
+    animation: turnDown 1s ease-out forwards 1000;
+ 
+}
+
+@keyframes turnDown {
+    0% {
+        transform: rotateX(180deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
